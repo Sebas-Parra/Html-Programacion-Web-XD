@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,71 @@
     <title>Mi primera pagina Web HTML</title>
 </head>
 <body>
-    <h1 class="Titulo1">Dove Cameron</h1>
-    <h2>Actualmente</h2>
-    <p><strong> Olivia Cameron </strong>(nacida como Chloe Celeste Hosterman;1​ Bainbridge Island, Washington; 15 de enero de 1996) es una actriz, cantante y compositora estadounidense. Saltó a la fama por su doble papel del personaje homónimo en la serie de comedia de Disney Channel Liv and Maddie (2013-2017), por la que ganó el Premio Daytime Emmy a mejor intérprete en programación infantil.</p>
-    <section class="imagen1">
-        <figcaption>
-            <img src="img/images.jpg" alt="Imagen de Dove Cameron" >
-        </figcaption>
-    </section>
-    <h2>Serie de Television</h2>
-    <p>Liv y Maddie (título original: Liv and Maddie)nota 1​ es una serie de televisión estadounidense creada por John Beck y Ron Hart, y producida en forma conjunta por Beck & Hart Productions, Oops Doughnuts Productions e It's a Laugh Productions para Disney Channel. La serie comenzó su producción en abril y se emitió por primera vez el 19 de julio de 2013.2​</p>
-    <section class="imagen2">
-        <figcaption>
-            <img src="img/images1.jpg" alt="Imagen de Liv y Maddie" >
-        </figcaption>
-    </section>
+
+    <div class="container">
+        <header>
+            <section>
+                <h1 class="Titulo1">Dove Cameron</h1>
+            </section>
+        </header>
+
+        <nav class="Barra">
+            Home | <a href="portafolio.html" class="bar1">Portafolio Web</a> | <a href="https://www.disneyplus.com/identity/login/enter-email" class="bar2">Episodios de Liv y Maddie</a>
+        </nav>
+
+        <h2>Actualmente</h2>
+        <p><strong> Olivia Cameron </strong>(nacida como Chloe Celeste Hosterman;1​ Bainbridge Island, Washington; 
+        15 de enero de 1996) es una actriz, cantante y compositora estadounidense. 
+        <span class="Spanea"> Saltó a la fama por su doble papel del personaje homónimo en la serie de comedia de Disney Channel Liv and Maddie (2013-2017)</span>, 
+        por la que ganó el Premio Daytime Emmy a mejor intérprete en programación infantil.</p>
     
+        <section class="imagen1">
+            <a href="https://www.youtube.com/watch?v=SOn3_0Oav0k" target="_blank">
+                <figcaption>
+                    <img src="img/images.jpg" alt="Imagen de Dove Cameron" >
+                </figcaption>
+            </a>
+        </section>
+        
+        <section>
+            <dl>
+                <dt>Informacion:</dt>
+                    <dd>Seattle, Estados Unidos</dd>
+                    <dd>25 años</dd>
+                    <dd>Actriz y Cantante</dd>
+                <dt>Otras canciones:</dt>
+                    <dd>Sand - Dove Cameron</dd>
+                    <dd>Breakfast - Dove Cameron</dd>
+                    <dd>God's Game - Dove Cameron</dd>
+            </dl>
+        </section>
+        
+        Buscar: <input type="text" name="buscar">
+        <button>Buscar</button>
+
+        <h2>Serie de Television</h2>
+        <p>Liv y Maddie (título original: Liv and Maddie)nota 1​ es una 
+            serie de televisión estadounidense creada por John Beck y Ron Hart, 
+            y producida en forma conjunta por Beck & Hart Productions, 
+            Oops Doughnuts Productions e It's a Laugh Productions para Disney Channel. 
+            <em> La serie comenzó su producción en abril y se emitió por primera vez el 19 de julio de 2013</em>​</p>
+
+        <section class="imagen2">
+            <a href="https://www.youtube.com/watch?v=iMlN2WbODHA" target="_blank">
+                <figure>
+                <figcaption>   
+                    <img src="img/images1.jpg" alt="Imagen de Liv y Maddie" >
+                    Plaza de la independencia
+                </figcaption>
+            </figure>
+            </a>
+        </section>
+        <button class="boton1">Visitar blog de fans</button>
+
+        <footer>
+            <h3 class="PiePag">Diseñado por: SnowSt</h3>
+        </footer>
+    </div>
+
 </body>
 </html>

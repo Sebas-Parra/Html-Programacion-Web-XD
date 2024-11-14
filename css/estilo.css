@@ -1,0 +1,42 @@
+body{
+    background-color: cadetblue;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.Titulo1{
+    text-align: center;
+}
+
+.Imagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Im{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+li{
+    text-align: left;
+}
+
+.MiPe{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
