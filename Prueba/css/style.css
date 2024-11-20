@@ -1,0 +1,72 @@
+body{
+    background: rgb(0,19,36);
+background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(201,208,231,1) 0%, rgba(70,110,138,1) 70%);
+}
+
+
+
+.contenedor1{
+    margin: 200px 300px 200px 650px;
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+/*imagen1*/
+
+.imagen1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*inputs*/
+.inputs{
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+
+
+input[type="password"]{
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+    color: aquamarine;
+}
+
+/*check*/
+.check{
+    margin-bottom: 20px;
+}
+
+/*boton*/
+.boton{
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background: rgb(0,19,36);
+background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(201,208,231,1) 0%, rgba(70,110,138,1) 70%);
+    width: 300px;
+    height: 30px;
+    color: white;
+    border-radius: 30px;
+}
+
+
+input{
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+}
