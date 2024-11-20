@@ -1,0 +1,39 @@
+.cabecera{
+    background-color: darkgreen;
+    text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background: rgb(0,19,36);
+background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(77,78,78,1) 0%, rgba(96,104,108,1) 55%, rgba(68,69,70,1) 66%);
+}
+
+nav{
+    color: aliceblue;
+}
+
+a{
+    margin-left: 30px;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    margin-top: 200px;
+    text-align: center;
+}
+
+table{
+    margin: 60px 300px 400px 300px;
+}
+
+th{
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+td{
+    background-color: aliceblue;
+}
