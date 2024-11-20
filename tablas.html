@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylebg.css">
+    <title>Tabla</title>
+</head>
+<body>
+    <header>Tablas</header>
+    <section>
+        <p>Uso de la etiqueta <em>table</em> para el <i>manejo</i> de envio o recibo de Informacion </p>
+        <article>
+            <table frame="void" rules="cols" class="TableStyle" border="2px" cellpadding="10px" cellspacing="0px">
+                <caption align="bottom">Listado de Personas</caption>
+                
+                <thead>
+                    <tr>
+                        <th align="center" width="300px">Nombres</th>
+                        <th align="center" width="300px">Apellidos</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Desarrollador de software xddd
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Andres</td>
+                        <td>Alvarez</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Sebas</td>
+                        <td>Parra</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    
+
+    <form method="post">
+        <label>Nombre: </label> <input type="text" id="nombre" placeholder="nombre">
+        <br>
+        <label>Apellidos: </label> <input type="text" id="apellido" placeholder="apellido">
+        <br>
+        <label>Password: </label> <input type="password" id="password" placeholder="password">
+        <br>
+        <label>Tipo persona: </label><select id="cboTipo"> 
+            <option>Estudiante</option>
+            <option>Docente</option>
+            <option>Administrativo</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+    </section>
+    
+</body>
+</html>

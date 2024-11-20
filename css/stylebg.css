@@ -1,0 +1,31 @@
+body{
+    background: rgb(0,19,36);
+background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(201,208,231,1) 0%, rgba(70,110,138,1) 70%);
+}
+
+input[type="text"]{
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+    color: aquamarine;
+}
+
+input[type="submit"]{
+    background: #ed213a;
+    width: 100px;
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(117, 117, 117);
+}
+
+input{
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+}
+
+input[type="text"]::placeholder{
+    color: darkgray;
+}
