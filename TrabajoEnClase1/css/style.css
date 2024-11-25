@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQADKyft9ZkE7k1TsfkSuGg1vAK_C80rmyg&s);
+}
+
+/*Cabecera*/
+.SecTitle1{
+    background-color: blue;
+    margin: 0;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.Title1{
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+nav{
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+a{
+    color: black;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*COntenedor*/
+
+.Container{
+    display: flex;
+    justify-content: center;
+}
+
+.article1{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 150px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 30px 25px 20px 25px;
+    flex: 1 1 300px;
+}
+
+.img1{
+    width: 70px;
+    flex: 2 2 500px;
+}
+
+.img2{
+    width: 70px;
+}
+
+aside{
+    margin-top: 30px;
+}
+
+.seccion2{
+    display: flex;
+    flex: 1 1 200px;
+}
+
+.tit{
+    margin-top: 40px;
+}
+
+.seccion3{
+    display: flex;
+}
+
+.l1{
+    border: 1px solid black;
+    border-radius: 20%;
+    position: absolute;
+}
+
+.l2{
+    border: 1px solid black;
+    border-radius: 20%;
+    position: absolute;
+}
