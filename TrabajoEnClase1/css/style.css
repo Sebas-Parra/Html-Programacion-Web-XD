@@ -37,36 +37,69 @@ a{
 .Container{
     display: flex;
     justify-content: center;
+    padding-left: 60px;
 }
 
 .article1{
-    width: 50%;
+    width: 700px;
     margin-top: 30px;
     margin-left: 50px;
-    margin-right: 150px;
+    margin-right: 90px;
     border: 1px solid black;
     border-radius: 30px;
     padding: 30px 25px 20px 25px;
-    flex: 1 1 300px;
+    background-color: aliceblue;
 }
 
-.img1{
-    width: 70px;
-    flex: 2 2 500px;
-}
-
-.img2{
-    width: 70px;
-}
-
-aside{
-    margin-top: 30px;
-}
+/*Seccion1*/
 
 .seccion2{
     display: flex;
-    flex: 1 1 200px;
 }
+
+.img1{
+    width: 70px;  
+}
+
+.imgs1{
+    flex: 1 1 50px;
+}
+
+.Parrafo1{
+    flex: 2 2 100px;
+}
+
+/*Seccion2*/
+
+
+
+.img2{
+    width: 70px;
+    flex: 2 2 100px;
+}
+
+.imgs2{
+    flex: 1 1 50px;
+}
+
+.Parrafo2{
+    flex: 2 2 100px;
+}
+
+.Aside{
+    margin-top: 30px;
+    margin-right: 30px;
+    border: 1px solid black;
+    height: 150px;
+    width: 350px;
+    padding: 20px 30px 20px 30px;
+}
+
+.Listas{
+    margin: 20px;
+}
+
+
 
 .tit{
     margin-top: 40px;
@@ -76,14 +109,30 @@ aside{
     display: flex;
 }
 
+.sub-article2{
+    margin-top: 100px;
+}
+
 .l1{
     border: 1px solid black;
     border-radius: 20%;
     position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    padding-top: 5px;
 }
 
 .l2{
     border: 1px solid black;
     border-radius: 20%;
     position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    padding-top: 5px;
 }
