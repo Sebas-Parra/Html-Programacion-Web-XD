@@ -1,0 +1,52 @@
+*{
+ margin: 0;
+}
+
+.fondo{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.bola{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: andar 2s linear infinite;
+}
+
+@keyframes andar {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100px,400px);
+    }
+    100%{
+        transform: translate(250px,0);
+    }
+}
+
+.barra{
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    border-radius: 35%;
+    margin-top: 400px;
+    animation: lado 1s linear infinite;
+}
+
+@keyframes lado {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
