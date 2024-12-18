@@ -62,6 +62,13 @@ let numerosReduce = [1,2,3,4,5];
 let maximo = numerosReduce.reduce((acumulador, num) => num > acumulador ? num : acumulador, numerosReduce[0]);
 console.log(maximo);
 
+//ventajas:
+/*Son ideales para trabajar con transformaciones y manipulaciones complejas */
+//permiten un estilo de programacion funcional mas limpio y facil de usar
+
+
+
+
 
 
 
