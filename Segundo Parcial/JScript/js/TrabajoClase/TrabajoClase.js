@@ -91,6 +91,23 @@ let minimo = estudiante.notas.reduce((acumulador, num) => num < acumulador ? num
 console.log("-----------------------------------------------------");
 }
 
+let promActual;
+let promMayor = estudiantes[0].promedio;
+let promedioMenor = estudiantes[0].promedio;
+let est1 = estudiantes[0];
+let est2 = estudiantes[0];
+
+for(let e of estudiantes){
+    if(e.promedio < promedioMenor){
+        promedioMenor = e.promedio;
+        est1 = e.nombre;
+    }else if(e.promedio > promMayor){
+        promMayor = e.promedio;
+        est2 = e.nombre;
+    }
+}
+console.log("El promedio menor es del estudiante "+ est1 +" con: "+ promedioMenor);
+console.log("El promedio mayor es del estudiante "+ est2 + " con: "+ promMayor);
 
 
 
