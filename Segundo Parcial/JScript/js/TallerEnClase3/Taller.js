@@ -47,6 +47,8 @@ const InventarioI = [
     producto4
 ]
 
+Object.seal(InventarioI);
+
 console.log(InventarioI);
 producto1.venderProducto('Papas', 5);
 producto2.venderProducto('Arroz', 5);
