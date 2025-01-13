@@ -191,4 +191,156 @@ let personaString = JSON.stringify(add);
 //del objeto
 console.log(personaString);
 
+//Metodos get en Objetos JS
+//mejores practicas para acceder y modificar objetos
+//Acceder a los valores de las propiedades
+
+let personaGet = {
+    nombre: 'Marco',
+    apellido: 'Valdiviezo',
+    edad: 50,
+    get nombreCompleto (){ //No es una propiedad ahora es un metodo get
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(personaGet.nombreCompleto);
+
+//Metodo set en obbjetos de JavaScript
+//Set establece o modifica los valores de los atributos de los objetos
+
+//validacion
+
+let personaSet = {
+    nombre: 'Marco',
+    apellido: 'Valdiviezo',
+    email: 'mvaldiviezo@gmail.com',
+    edad: 23,
+    idioma: 'es',
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    get nombreCompleto(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(personaSet.lang);
+
+//Set
+
+let personaSet2 = {
+    nombre: 'Marco',
+    apellido: 'Valdiviezo',
+    email: 'mvaldiviezo@gmail.com',
+    edad: 23,
+    idioma: 'es',
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang(idioma){
+        this.idioma = idioma;
+    },
+    get nombreCompleto(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(personaSet2.lang);
+
+personaSet2.lang = 'en';
+
+console.log(personaSet2.lang);
+
+//Constructores en JavaScript
+
+//Si se desea crear mas objetos del mismo tipo no es posible
+//Por esta razon se crean constructores
+
+//Es una funcion especial que permite trabajar con Objetos en JS
+
+//funcion constructora de tipo persona
+
+function PersonaFC(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+}
+
+let padre = new PersonaFC('Juan','Sanchez','jsanchez@gmail.com'); //variable es ahora un metodo que permite crear objetos de tipo persona
+console.log(padre);
+
+padre.tel = '22334455';
+console.log(padre);
+
+let madre = new PersonaFC('Laura','Moya','lmoya@email.com');
+console.log(madre);
+
+//Agregarmetodos a una funcion constructora
+
+function PersonaFCM(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let padre1 = new PersonaFCM('Juan','Sanchez','jsanchez@gmail.com');
+
+console.log(padre1.nombreCompleto());
+
+let madreFCM = new PersonaFCM('Laura','Moya','lmoya@gmail.com');
+
+console.log(madreFCM.nombreCompleto());
+
+//uso de prototype
+
+PersonaFCM.prototype.tel = '123456789';
+
+console.log(madreFCM.tel);
+
+//Uso del metodo Call
+
+let personaC1 = {
+    nombre: 'Diego',
+    apellido: 'Cajas',
+    nombreCompleto: function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let personaC2 = {
+    nombre: 'Andres',
+    apellido: 'Farias'
+}
+
+//Para usar el metodo nombreCompleto que pertenece al objeto personaC1
+//con los datos del Objeto personaC2
+
+console.log(personaC1.nombreCompleto());
+console.log(personaC1.nombreCompleto.call(personaC2));
+
+//pasar argumentos o parametros a call
+
+let personaCP1 = {
+    nombre: 'Diego',
+    apellido: 'Cajas',
+    nombreCompleto: function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ' ' + tel;
+    }
+}
+
+let personaCP2 = {
+    nombre: 'Andres',
+    apellido: 'Farias'
+}
+
+console.log(personaCP1.nombreCompleto('Lic', '22334455'));
+console.log(personaCP1.nombreCompleto.call(personaCP2, 'Ing', '22334455'));
+
+
+
+
 
