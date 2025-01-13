@@ -14,6 +14,13 @@ class Inventario{ //Clase inventario
         this.PrDucts.push(new Producto(Nombre, precio, cantidad, categoria));
     }
 
+    MostrarPoructosPrecioAscendente(){ //Muestra los productos en orden ascendente por precio
+        this.PrDucts.sort((a, b) => a.precio - b.precio);
+        for(let producto of this.PrDucts){
+            console.log(producto);
+        }
+    }
+
     FiltrarCategoria(categoria){ //Filtra productos por categoria
         for(let producto of this.PrDucts){
             if(producto.categoria == categoria){
@@ -67,6 +74,8 @@ invent.AgregarProducto('Celular', 100, 5, 'Electronicos');
 invent.AgregarProducto('Cueritos', 2, 30, 'Snacks');
 console.log('--------------------CATEGORIAS FILTRADAS---------------------');
 invent.FiltrarCategoria('Snacks');
+console.log('--------------------PRODUCTOS EN ORDEN ASCENDENTE POR PRECIO------------------');
+invent.MostrarPoructosPrecioAscendente();
 console.log('--------------------DESCUENTOS---------------------');
 invent.Descuento('Snacks', 10)
 invent.Descuento('Electronicos', 20)
@@ -83,9 +92,7 @@ console.log('');
 
 console.log('---------------------------------------------REPORTE DE VENTAS-----------------------------------------------------------');
 console.log('----------PRODUCTOS EN EL INVENTARIO ACTUALIZADO---------');
-for(let product of invent.PrDucts){
-    console.log(product);
-}
+invent.MostrarPoructosPrecioAscendente();
 console.log('---------VENTAS REALIZADAS INCLUYENDO FECHA Y HORA----------');
 for(let vent of venta.ventas){
     console.log(vent);
