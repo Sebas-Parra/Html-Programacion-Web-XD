@@ -14,7 +14,7 @@ const determinarMayor = function(a, b){if(typeof a === 'number' && typeof b === 
 const esPar = (a) => a % 2 == 0 && typeof a === 'number' ? true : false;
 
 (function(){
-    console.log(calcularPromedio(18, 20, 13));
+    console.log(calcularPromedio(18, '', 13));
     console.log(determinarMayor(12,13));
     console.log(esPar(4));
 })();
