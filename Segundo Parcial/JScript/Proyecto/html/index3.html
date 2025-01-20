@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM en JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Manejo del DOM en JavaScript</h1>
+    <button type="button" onclick="mostrar()">Mostrar</button>
+    <br>
+    <img id="imagen" src="../images/imagen1.jpeg" alt="imagen"> 
+    
+    <script>
+        //document.write('Saludos Write!');
+        document.getElementById('titulo').style.color = 'blue';
+        let contador = 0;
+        function mostrar(){
+            //document.write('Adios')
+            //document.getElementById('titulo').innerHTML = 'Nuevo Titulo';
+            //document.getElementById('imagen').src = '../images/Captura desde 2024-12-05 21-25-50.png'
+            //document.getElementById('titulo').style.color = 'red';
+            setInterval(() => {
+                 contador++;
+                if(contador === 4){
+                    contador = 0;
+                }
+                let imagenes = ['../images/imagen1.jpeg','../images/imagen2.jpeg','../images/imagen3.jpeg','../images/imagen4.jpeg'];
+                document.getElementById('imagen').src = imagenes[contador];
+            }, 1000);
+
+            
+
+        }
+
+        
+
+
+        /*
+        Crear una funcion que permita el cambio de una imagen cada dos o 3 segundos*/
+
+    </script>
+</body>
+</html>

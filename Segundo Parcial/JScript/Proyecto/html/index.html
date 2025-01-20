@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM en JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+        .rojo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="cabecera" class="azul">Ejemplo del DOM con JavaScript</h1>
+        <p id="parrafo" class="azul">Parrafo Nº1</p>
+        <p id="parrafo2" class="rojo">Parrafo Nº2</p>
+    </header>
+    <script>
+        // /*getElementByID*/
+        // let cabecera = document.getElementById('cabecera').innerHTML /*Obtenemos el valor en si*/;
+        // console.log('Valor de cabecera: ' + cabecera);
+        // let parrafo = document.getElementById('parrafo');
+        // console.log(parrafo);
+        
+        // /*Cambiar su valor a traves de innerHTML*/
+        // parrafo.innerHTML = 'Nuevo valor del parrafo';
+        // /*console.log('Saludos desde JS')*/
+
+
+        // /*getElementByTagName*/
+        // let parrafos = document.getElementsByTagName('p');
+        // console.log(`Nro de parrafos ${parrafos.length}`);
+
+        // for (const element of parrafos){
+        //     console.log(element.innerHTML);
+        // }
+
+
+        // /*getElementByClassName*/
+        // let parrafos = document.getElementsByClassName('azul');
+        // console.log(`Nro de parrafos ${parrafos.length}`);
+
+        // for (const element of parrafos){
+        //     console.log(element.innerHTML);
+        // }
+
+
+        /*querySelectoAll*/
+        let elementos = document.querySelectorAll('p.rojo');
+        console.log(`Nro de elementos ${elementos.length}`);
+        
+        for (const elements of elementos){
+            console.log(elements.innerHTML);
+            
+        }
+    </script>
+</body>
+</html>
