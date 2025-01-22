@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando un panel de COnfiguracion Interactivo</title>
+    <style>
+        #Config{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Titulo de la pagina</h1>
+    <button id="button-Config">Configuracion</button>
+    <form id="Config">
+        Titulo: <input type="text" id="titul-input">
+        Color: <input type="color">
+        Comentario: <input type="checkbox"> 
+    </form>
+    <script>
+        const button = document.getElementById('button-Config');
+        const formulario = document.getElementById('Config');
+        const titulo = document.getElementById('titulo');
+        const titulInput = document.getElementById('titul-input');
+
+        button.addEventListener('click', () => {
+            if(formulario.style.display === 'none'){
+                formulario.style.display = 'block';
+            }else{
+                formulario.style.display = 'none';
+            }
+        } )
+
+        titulInput.addEventListener('input', ()=>{
+            titulo.textContent = titulInput.value;
+        });
+    </script>
+</body>
+</html>

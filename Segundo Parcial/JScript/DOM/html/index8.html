@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos con DOM JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Evento addListener con funciones flecha</h1>
+    <br>
+    <form action="" method="get" id="formulario">
+        Nombre: <input type="text" id="nombre">
+        <br>
+        Apellido: <input type="text" id="apellido">
+    </form>
+
+    
+    <script>
+        let formulario = document.getElementById('formulario');
+       formulario.addEventListener('click', (evento) => {
+        evento.target.style.background = 'pink';
+       },true);//FUncion de tipo callback
+       formulario.addEventListener('blur',(evento) => {
+        evento.target.style.background = 'white';
+       }, true);
+
+       formulario.addEventListener('click', (evento) => {
+        evento.target.style.background = 'pink';
+       }, true);
+       formulario.addEventListener('blur',(evento) => {
+        evento.target.style.background = 'white';
+       }, true);
+
+        function cambiar(evento) {
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+
+        function regresar(evento) {
+            let componente = evento.target;
+            componente.style.background = 'white';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos con DOM JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Evento addListener</h1>
+    <br>
+    Nombre: <input type="text" id="nombre">
+    <br>
+    Apellido: <input type="text" id="apellido">
+    <script>
+       document.getElementById('nombre').addEventListener('click', cambiar);//FUncion de tipo callback
+       document.getElementById('nombre').addEventListener('blur',regresar);
+
+       document.getElementById('apellido').addEventListener('click', cambiar);//FUncion de tipo callback
+       document.getElementById('apellido').addEventListener('blur',regresar);
+        function cambiar(evento) {
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+
+        function regresar(evento) {
+            let componente = evento.target;
+            componente.style.background = 'white';
+        }
+
+    </script>
+</body>
+</html>

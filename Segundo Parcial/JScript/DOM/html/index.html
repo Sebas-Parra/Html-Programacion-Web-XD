@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos con DOM JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" onclick="cambiarTexto(this)">Evento OnClick()</h1>
+    <br>
+    <script>
+        // function cambiarTexto(titulo){
+        //     //console.log(titulo);
+        //     //titulo.innerHTML = 'Cambiamos el texto';
+
+        // }
+        document.getElementById('titulo').onclick = cambiarTexto;
+        //EStamos haciendo referencia, no estamos llamando a la funcion,
+        //Esta funcionn es de tipo callback
+        //Trabajar de forma dinamica
+
+        function cambiarTexto(){
+            document.getElementById('titulo').innerHTML = 'Otro titulo';
+        }
+
+    </script>
+</body>
+</html>

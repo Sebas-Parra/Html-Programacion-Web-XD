@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos con DOM JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Evento Onfocus y Onblur</h1>
+    <br>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    <br>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    <script>
+       function cambiar(elementInput) {
+            elementInput.style.background = 'yellow';
+       }
+
+       function regresar(elementInput){
+            elementInput.style.background = 'white';
+       }
+
+    </script>
+</body>
+</html>
